@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Poppins:wght@300;400;500;600&display=swap');
+:root{
+    --primary:#cc1c1a;
+    --secondary:#fff;
+    --Tertiary:black;
+    --Quaternary:plum;
+    --Senary:crimson;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif,Georgia, 'Times New Roman', Times, serif;
+}
+.top{
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+.top .main{
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top .main nav{
+    padding: 0.8rem;
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.top .main nav .logo {
+   width: 10%;
+   height: 10%;
+   position: relative;
+}
+.top .main nav .list{
+    width: 27%;
+}
+.top .main nav .list ul{
+    display: flex;
+    justify-content: space-between;
+}
+.top .main nav .list ul li{
+    list-style: none;
+}
+button{
+    padding: 15px 60px 15px 40px;
+    background: #1b2a2f;
+    color: white;
+    -webkit-transition: .5s cubic-bezier(.86, 0, .07, 1);
+    -o-transition: .5s cubic-bezier(.86, 0, .07, 1);
+    transition: .5s cubic-bezier(.86, 0, .07, 1);
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
