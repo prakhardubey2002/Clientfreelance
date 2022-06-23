@@ -12,6 +12,9 @@
     box-sizing: border-box;
     font-family: "Poppins",sans-serif,Georgia, 'Times New Roman', Times, serif;
 }
+body{
+    background-color: #262626;
+}
 .top{
     width: 100vw;
     height: 100vh;
@@ -25,21 +28,27 @@
     align-items: center;
 }
 .top .main nav{
-    padding: 0.8rem;
+    padding: 1rem;
     width: 80%;
     height: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline;
+    align-items:center;
 }
 .top .main nav .logo {
-   width: 10%;
-   height: 10%;
-   position: relative;
+   color: var(--primary);
+   font-weight: 100;
+   font-size: 1rem;
+}
+.top .main nav .logo span{
+    color: var(--secondary);
+    text-transform: uppercase;
+
 }
 .top .main nav .list{
-    width: 27%;
+    width: 30%;
+    color: var(--secondary);
 }
 .top .main nav .list ul{
     display: flex;
@@ -49,8 +58,8 @@
     list-style: none;
 }
 button{
-    padding: 15px 60px 15px 40px;
-    background: #1b2a2f;
+    padding: 15px 40px 15px 40px;
+    background: #2fb0db;
     color: white;
     -webkit-transition: .5s cubic-bezier(.86, 0, .07, 1);
     -o-transition: .5s cubic-bezier(.86, 0, .07, 1);
@@ -61,4 +70,51 @@ button{
     line-height: 1;
     font-weight: 500;
     letter-spacing: 3px;
+    /* border: 1px solid var(--primary); */
+}
+.top .main .content{
+    width: 92%;
+    padding: 1rem;
+    height: 80%;
+    display: flex;
+    box-shadow:
+    rgba(22, 31, 39, 0.9) 0px 60px 123px -25px,
+    rgba(19, 26, 32, 0.8) 0px 35px 75px -35px;
+}
+.top .main .content .text{
+    color: var(--secondary);
+    padding: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow:
+    rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+    rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+}
+.top .main .content .text h1{
+    font-size: 32px;
+    color: var(--primary);
+    letter-spacing: 1px;
+    transform:
+    perspective(75em)
+    rotateX(18deg);
+}
+.top .main .content .text h1 span{
+    font-size: 56px;
+    color: var(--secondary);
+   
+}
+.top .main .content .image{
+    /* /* width: 500px; */
+    height: 500px; 
+    padding: 1rem;
+    /* object-fit: contain; */
+    
+}
+.top .main .content .image img{
+  height: 100%;
+   width: 100%;
+    object-fit: contain;
 }
